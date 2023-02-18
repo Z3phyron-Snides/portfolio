@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3500/api/contact/";
+const API_URL = "https://ricketts.onrender.com/api/contact/";
 
 const sendContact = async (data) => {
 console.log(data);

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3500/api/project/";
+const API_URL = "https://ricketts.onrender.com/api/project/";
 
 
 
