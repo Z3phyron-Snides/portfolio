@@ -95,6 +95,7 @@ const Index = () => {
             Thank you for visiting my website, and I look forward to the
             opportunity to work with you!
           </p>
+          
         </Text>
 
         <Skills>
