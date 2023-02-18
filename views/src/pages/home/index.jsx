@@ -41,7 +41,7 @@ const Index = () => {
   });
 
   return (
-    <Container >
+    <Container>
       <Intro>
         <div className="text" ref={(el) => (intro_1 = el)}>
           <h2>Hello</h2>
@@ -55,9 +55,8 @@ const Index = () => {
       </Intro>
       <Description ref={(el) => (description = el)}>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
-          suscipit odio ratione labore omnis earum quia beatae assumenda
-          accusamus delectus.
+          I'm a full-stack MERN (MongoDB, Express, React, Node.js) developer
+          with a passion for building robust and user-friendly web applications.
         </p>
       </Description>
     </Container>

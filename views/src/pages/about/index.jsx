@@ -67,17 +67,33 @@ const Index = () => {
       <Content>
         <Text ref={(el) => (text = el)}>
           <p>
-            A Front End Web Developer based in Lagos, Nigeria. I have over two
-            year of experience in writing maintainable and functional code,
-            following best practices, and building websites.
+            I'm a full-stack MERN (MongoDB, Express, React, Node.js) developer
+            with a passion for building robust and user-friendly web
+            applications. With years of experience in web development, software
+            Engineering student at NIIT, where I plan on studying more to help
+            build my career. I specialize in using the power of the MERN stack
+            to create scalable and high-performing applications for businesses
+            and organizations of all sizes.
           </p>
         </Text>
         <Text ref={(el) => (text = el)}>
           <p>
-            I'm a software Engineering student at NIIT, where I plan on studying
-            more to help build my career. Adept knowledge in building robust
-            RESTful APIs, dashboards, API Integrations. I value teamwork and
-            respect everyone’s opinion.
+            From front-end development to back-end development, API development,
+            and database integration, I use the latest tools and technologies to
+            deliver custom web applications that meet my clients' specific
+            needs. I pride myself on my attention to detail, my ability to
+            communicate clearly and professionally with clients, and my
+            commitment to delivering projects on time and within budget.
+          </p>
+        </Text>
+        <Text ref={(el) => (text = el)}>
+          <p>
+            Whether you're a startup looking to build your first web application
+            or an established enterprise in need of a customized solution, I can
+            help. Take a look at my portfolio to see some of my past projects,
+            and feel free to contact me to discuss your project requirements.
+            Thank you for visiting my website, and I look forward to the
+            opportunity to work with you!
           </p>
         </Text>
 
