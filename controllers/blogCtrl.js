@@ -31,7 +31,7 @@ const AddBlog = asyncHandler(async (req, res) => {
     promises.push(thumb.mv(savePath));
   }
 
-  let url = `http://localhost:3500/uploads/${reqFiles[0]}`;
+  let url = `https://ricketts.onrender.com/uploads/${reqFiles[0]}`;
 
   try {
     let blog = new Blog({
@@ -155,7 +155,7 @@ const UpdateBlog = asyncHandler(async (req, res) => {
 
   res.status(201).json(blog);
 
-  let url = `http://localhost:3500/uploads/${reqFiles[0]}`;
+  let url = `https://ricketts.onrender.com/uploads/${reqFiles[0]}`;
 
   try {
     let blog = new Blog({
