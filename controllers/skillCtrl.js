@@ -30,7 +30,7 @@ const AddSkill = asyncHandler(async (req, res) => {
     promises.push(thumb.mv(savePath));
   }
 
-  let url = `http://localhost:3500/uploads/${reqFiles[0]}`;
+  let url = `https://ricketts.onrender.com/uploads/${reqFiles[0]}`;
 
   try {
     let skill = new Skill({
@@ -132,7 +132,7 @@ const Updateskill = asyncHandler(async (req, res) => {
 
     res.status(201).json(skill);
 
-    let url = `http://localhost:3500/uploads/${reqFiles[0]}`;
+    let url = `https://ricketts.onrender.com/uploads/${reqFiles[0]}`;
 
     res.status(201).json(skill);
   } catch (error) {
