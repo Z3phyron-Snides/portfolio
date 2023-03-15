@@ -5,6 +5,7 @@ const Index = () => {
   return (
     <Container>
       <Link to="/dash/projects">Projects</Link>
+      <Link to="/dash/experience">Experience</Link>
       <Link to="/dash/blogs">Blogs</Link>
       <Link to="/dash/skills">Skills</Link>
     </Container>

@@ -13,6 +13,7 @@ import About from "../pages/about";
 import Dashboard from "../pages/dashboard";
 import DashLayout from "../pages/dashboard/layout";
 import DashProjects from "../pages/dashboard/screens/projects";
+import DashExperience from "../pages/dashboard/screens/experience";
 import DashBlogs from "../pages/dashboard/screens/blogs";
 import DashSkill from "../pages/dashboard/screens/skills";
 
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
           {
             path: "/dash/projects",
             element: <DashProjects />,
+          },
+          {
+            path: "/dash/experience",
+            element: <DashExperience />,
           },
           {
             path: "/dash/blogs",

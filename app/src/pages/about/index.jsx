@@ -1,12 +1,16 @@
 import React, { useEffect, useRef } from "react";
-import { Container, Content, SkillList, Skills, Text, Title } from "./styles";
+import { Container, Content, ExperienceList, Experiences, SkillList, Skills, Text, Title } from "./styles";
 import Skill from "../../components/skill";
 import { gsap } from "gsap";
 import { useSelector } from "react-redux";
+import ExperienceCard from "../../components/experience";
 
 const Index = () => {
   const { skills } = useSelector(
     (state) => state.skill
+  );
+  const { experiences } = useSelector(
+    (state) => state.experience
   );
   let title = useRef(null);
   let text = useRef(null);
@@ -95,7 +99,6 @@ const Index = () => {
             Thank you for visiting my website, and I look forward to the
             opportunity to work with you!
           </p>
-          
         </Text>
 
         <Skills>
@@ -108,6 +111,17 @@ const Index = () => {
             ))}
           </SkillList>
         </Skills>
+
+        <Experiences>
+          <h4 className="title" ref={(el) => (title = el)}>
+            Experience
+          </h4>
+          <ExperienceList>
+            {experiences?.map((item) => (
+              <ExperienceCard key={item?._id} experience={item} />
+            ))}
+          </ExperienceList>
+        </Experiences>
       </Content>
     </Container>
   );

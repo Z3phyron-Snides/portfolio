@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { GetProjects } from "./features/project/ProjectSlice";
 import { GetBlogs } from "./features/blog/BlogSlice";
 import { GetSkills } from "./features/skill/SkillSlice";
+import { GetExperiences } from "./features/experience/ExperienceSlice";
 
 function App() {
   const { theme } = useSelector((state) => state.theme);
@@ -17,6 +18,7 @@ function App() {
     dispatch(GetProjects());
     dispatch(GetBlogs());
     dispatch(GetSkills());
+    dispatch(GetExperiences());
    
   }, [dispatch]);
 

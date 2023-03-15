@@ -29,7 +29,6 @@ const Index = (props) => {
                 return isActive ? "active" : isPending ? "pending" : "";
               }}
             >
-              {" "}
               <div className="text">Projects</div>
               <SiNounproject className="icon" />
             </NavLink>
@@ -41,21 +40,8 @@ const Index = (props) => {
                 return isActive ? "active" : isPending ? "pending" : "";
               }}
             >
-              {" "}
               <div className="text">Blog</div>
               <ImBlog className="icon" />
-            </NavLink>
-          </label>
-          <label>
-            <NavLink
-              to="/contact"
-              className={({ isActive, isPending }) => {
-                return isActive ? "active" : isPending ? "pending" : "";
-              }}
-            >
-              {" "}
-              <div className="text">Contact</div>
-              <MdContactPage className="icon" />
             </NavLink>
           </label>
           <label>
@@ -67,6 +53,17 @@ const Index = (props) => {
             >
               <div className="text">About</div>
               <MdContactSupport className="icon" />
+            </NavLink>
+          </label>
+          <label>
+            <NavLink
+              to="/contact"
+              className={({ isActive, isPending }) => {
+                return isActive ? "active" : isPending ? "pending" : "";
+              }}
+            >
+              <div className="text">Contact</div>
+              <MdContactPage className="icon" />
             </NavLink>
           </label>
         </div>

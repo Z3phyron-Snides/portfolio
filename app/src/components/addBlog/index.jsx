@@ -1,4 +1,4 @@
-import { Container, Form, FormCtrl, FormEl, Media } from "./styles";
+import { Container, FormCtrl, FormEl, Media } from "./styles";
 import { Avatar, Button, Input, Modal, Text, Loading } from "@nextui-org/react";
 import { TbPlus } from "react-icons/tb";
 import { BsPlus } from "react-icons/bs";
@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AddBlog } from "../../features/blog/BlogSlice";
 import { toast } from "react-hot-toast";
-import { Formik, Field, ErrorMessage, useFormik } from "formik";
+import { Formik } from "formik";
 import * as Yup from "yup";
 
 const Index = (props) => {

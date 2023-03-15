@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
-  /* max-width: 1; */
+  max-width: 250px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.127);
@@ -34,6 +34,16 @@ export const Description = styled.div`
   color: ${(p) => p.theme.content};
   font-size: 12px;
 `;
+export const Subtitle = styled.div`
+  color: ${(p) => p.theme.content};
+  font-size: 12px;
+`;
+export const Dates = styled.div`
+display: flex;
+gap: 10px;
+  color: ${(p) => p.theme.content};
+  font-size: 12px;
+`;
 export const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -44,8 +54,8 @@ export const Tags = styled.div`
     padding: 4px 7px;
     background: rgba(121, 121, 121, 0.494);
     border-radius: 10px;
-    color: ${p => p.theme.text};
-  max-height: 20px;
+    color: ${(p) => p.theme.text};
+    max-height: 20px;
   }
 `;
 

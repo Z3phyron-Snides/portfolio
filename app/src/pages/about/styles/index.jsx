@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  padding: 0 8%;
+  padding: 15vh 8% 10vh;
   letter-spacing: 1px;
-  padding-top: 15vh;
+  /* padding: 15vh ; */
 `;
 
 export const Title = styled.div`
@@ -34,6 +34,20 @@ export const Skills = styled.div`
   }
 `;
 export const SkillList = styled.div`
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+`;
+export const Experiences = styled.div`
+
+  .title {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: ${(p) => p.theme.text};
+  }
+`;
+export const ExperienceList = styled.div`
 display: flex;
 gap: 20px;
 flex-wrap: wrap;

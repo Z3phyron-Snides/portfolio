@@ -11,9 +11,9 @@ import {
   Loading,
 } from "@nextui-org/react";
 import { TbPlus } from "react-icons/tb";
-import ReactSelect from "react-select/creatable";
 import { toast } from "react-hot-toast";
 import { Formik, Field } from "formik";
+import { AddExperience } from "../../features/experience/ExperienceSlice";
 
 const AddProjectModal = () => {
   const { project, message, isError, isSuccess } = useSelector(
@@ -40,21 +40,23 @@ const AddProjectModal = () => {
   }, [isSuccess, isError, project, message, dispatch]);
 
   const initialValues = {
-    title: "",
+    companyName: "",
+    jobTitle: "",
     description: "",
-    url: "",
-    tags: [],
+    startDate: null,
+    endDate: null,
   };
 
   const onSubmit = (values, { setSubmitting, resetForm }) => {
-    dispatch(AddProject(values));
+    dispatch(AddExperience(values));
+    console.log(values);
     setSubmitting(false);
     resetForm();
     closeHandler();
   };
   return (
     <Container>
-      <Button auto color="secondary" onClick={handler} icon={<TbPlus />} />
+      <Button auto color="warning" onClick={handler} icon={<TbPlus />} />
 
       <Modal
         closeButton
@@ -67,7 +69,7 @@ const AddProjectModal = () => {
       >
         <Modal.Header>
           <Text id="modal-title" size={18}>
-            Add Project
+            Add Experience
           </Text>
         </Modal.Header>
         <Modal.Body>
@@ -79,9 +81,18 @@ const AddProjectModal = () => {
                   aria-label="..."
                   fullWidth
                   bordered
-                  placeholder="Title"
+                  placeholder="Company Name"
                   color="secondary"
-                  name="title"
+                  name="companyName"
+                />
+                <Field
+                  as={Input}
+                  aria-label="..."
+                  fullWidth
+                  bordered
+                  placeholder="Job Title"
+                  color="secondary"
+                  name="jobTitle"
                 />
                 <Field
                   as={Textarea}
@@ -92,32 +103,30 @@ const AddProjectModal = () => {
                   color="secondary"
                   name="description"
                 />
-                <Field
-                  as={Input}
-                  aria-label="..."
-                  fullWidth
-                  bordered
-                  placeholder="URL"
-                  color="secondary"
-                  name="url"
-                />
-                <Field name="tags">
-                  {({ field }) => (
-                    <ReactSelect
-                      {...field}
-                      isMulti
-                      onChange={(newValue, actionMeta) =>
-                        field.onChange({
-                          target: { name: "tags", value: newValue },
-                        })
-                      }
-                      onInputChange={(inputValue, actionMeta) => {
-                        console.log(inputValue);
-                      }}
-                      placeholder="Select or create tags"
-                    />
-                  )}
-                </Field>
+
+                <div className="dates">
+                  <Field
+                    type="date"
+                    as={Input}
+                    aria-label="..."
+                    fullWidth
+                    bordered
+                    placeholder="startDate"
+                    color="secondary"
+                    name="startDate"
+                  />
+                  <Field
+                    type="date"
+                    as={Input}
+                    aria-label="..."
+                    fullWidth
+                    bordered
+                    placeholder="startDate"
+                    color="secondary"
+                    name="endDate"
+                  />
+                </div>
+
                 <Button
                   auto
                   color="secondary"

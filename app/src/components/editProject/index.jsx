@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { reset, UpdateProject } from "../../features/project/ProjectSlice";
 import { ButtonGroup, Container, FormEl } from "./styles";
 import {
@@ -12,10 +12,10 @@ import {
 } from "@nextui-org/react";
 import ReactSelect from "react-select/creatable";
 import { closeModal } from "../../features/tools/modal";
-import { Formik, Form, Field } from "formik";
+import { Formik, Field } from "formik";
 
 const EditProject = ({ data }) => {
-  const { isLoading } = useSelector((state) => state.project);
+
   const dispatch = useDispatch();
 
   const initialValues = {
