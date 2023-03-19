@@ -25,7 +25,7 @@ const Index = (props) => {
   return (
     <Container>
       <Title>{project?.title}</Title>
-      <Url to={project?.url}>
+      <Url href={project?.url}>
         <BsLink45Deg />
       </Url>
 

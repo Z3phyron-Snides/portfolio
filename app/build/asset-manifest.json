@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.96d25ea0.css",
-    "main.js": "/static/js/main.c2f60e31.js",
+    "main.js": "/static/js/main.41244f15.js",
     "static/media/fira-code-all-400-normal.woff": "/static/media/fira-code-all-400-normal.c050f0ce726c76d279c8.woff",
     "static/media/fira-code-latin-400-normal.woff2": "/static/media/fira-code-latin-400-normal.e662d57ce51fba1f46e3.woff2",
     "static/media/fira-code-cyrillic-ext-400-normal.woff2": "/static/media/fira-code-cyrillic-ext-400-normal.8ae7ba46c49a0347ea65.woff2",
@@ -11,10 +11,10 @@
     "static/media/fira-code-greek-ext-400-normal.woff2": "/static/media/fira-code-greek-ext-400-normal.0e81dfaccdc5adb60d7c.woff2",
     "index.html": "/index.html",
     "main.96d25ea0.css.map": "/static/css/main.96d25ea0.css.map",
-    "main.c2f60e31.js.map": "/static/js/main.c2f60e31.js.map"
+    "main.41244f15.js.map": "/static/js/main.41244f15.js.map"
   },
   "entrypoints": [
     "static/css/main.96d25ea0.css",
-    "static/js/main.c2f60e31.js"
+    "static/js/main.41244f15.js"
   ]
 }

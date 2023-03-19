@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
-  /* max-width: 1; */
+  /* max-width: 250px; */
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.127);
@@ -21,6 +20,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 900px) {
     width: 100%;
+    max-width: 100%;
   }
   &:hover {
     transform: translateY(-5px);
@@ -49,7 +49,7 @@ export const Tags = styled.div`
   }
 `;
 
-export const Url = styled(Link)`
+export const Url = styled.a`
   width: 30px;
   height: 30px;
   border-radius: 50px;

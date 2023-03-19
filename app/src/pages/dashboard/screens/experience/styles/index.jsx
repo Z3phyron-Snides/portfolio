@@ -16,6 +16,10 @@ export const ProjectList = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
   padding-top: 5vh;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 

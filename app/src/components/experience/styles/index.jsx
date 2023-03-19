@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 250px;
+  
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.127);

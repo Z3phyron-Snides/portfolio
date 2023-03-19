@@ -1,7 +1,7 @@
 import axios from "axios";
 import { tokenConfig } from "../tokenConfig";
 
-const API_URL = "http://localhost:5000/api/experience/";
+const API_URL = "/api/experience/";
 
 /*
     @route POST api/Experience
