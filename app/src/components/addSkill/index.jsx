@@ -64,7 +64,7 @@ const Index = (props) => {
   };
   return (
     <Container>
-      <Button auto color="secondary" onPress={handler} icon={<TbPlus />} />
+      <Button auto color="warning" onPress={handler} icon={<TbPlus />} />
 
       <Modal
         closeButton
@@ -103,14 +103,14 @@ const Index = (props) => {
                 bordered
                 aria-label="..."
                 placeholder="Title"
-                color="secondary"
+                color="warning"
                 name="title"
                 value={title}
                 onChange={onChange}
               />
             </FormCtrl>
 
-            <Button auto color="secondary" type="submit">
+            <Button auto color="warning" type="submit">
               {isLoading ? (
                 <Loading type="points" color={"white"} />
               ) : (

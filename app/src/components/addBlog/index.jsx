@@ -41,7 +41,7 @@ const Index = (props) => {
 
   return (
     <Container>
-      <Button auto color="secondary" onClick={handler} icon={<TbPlus />} />
+      <Button auto color="warning" onClick={handler} icon={<TbPlus />} />
 
       <Modal
         closeButton
@@ -110,7 +110,7 @@ const Index = (props) => {
                     fullWidth
                     bordered
                     placeholder="Title"
-                    color="secondary"
+                    color="warning"
                     name="title"
                     value={values.title}
                     onChange={(event) => {
@@ -136,7 +136,7 @@ const Index = (props) => {
 
                 <Button
                   auto
-                  color="secondary"
+                  color="warning"
                   type="submit"
                   onClick={closeHandler}
                 >

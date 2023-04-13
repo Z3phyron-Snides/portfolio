@@ -39,8 +39,6 @@ const Root = () => {
           Ricketts.
         </Link>
 
-      
-
         <Theme onClick={changeMode}>
           {theme === "dark" ? <MdWbSunny /> : <IoMoonSharp />}
         </Theme>
@@ -59,8 +57,12 @@ const Theme = styled.div`
   justify-content: center;
   align-items: center;
   color: ${(p) => p.theme.green};
+
 `;
 const Container = styled.div`
+  .logo {
+    color: ${(p) => p.theme.green};
+  }
   .eclipse {
     width: 100px;
     height: 100px;
@@ -69,7 +71,7 @@ const Container = styled.div`
     position: fixed;
     z-index: 5;
 
-    filter: blur(100.6px);
+    filter: blur(70.6px);
   }
 
   .circle_1 {

@@ -40,7 +40,7 @@ const Container = styled.div`
   padding: 0 8%;
 `;
 const Link = styled(NavLink)`
-  color: ${(p) => p.theme.text};
+  color: ${(p) => p.theme.link};
   position: relative;
   &.active {
     color: ${(p) => p.theme.green};

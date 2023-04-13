@@ -55,7 +55,7 @@ const AddProjectModal = ({ data }) => {
                   fullWidth
                   bordered
                   placeholder="Company Name"
-                  color="secondary"
+                  color="warning"
                   name="companyName"
                 />
                 <Field
@@ -64,7 +64,7 @@ const AddProjectModal = ({ data }) => {
                   fullWidth
                   bordered
                   placeholder="Job Title"
-                  color="secondary"
+                  color="warning"
                   name="jobTitle"
                 />
                 <Field
@@ -73,7 +73,7 @@ const AddProjectModal = ({ data }) => {
                   fullWidth
                   bordered
                   placeholder="Description"
-                  color="secondary"
+                  color="warning"
                   name="description"
                 />
 
@@ -85,7 +85,7 @@ const AddProjectModal = ({ data }) => {
                     fullWidth
                     bordered
                     placeholder="startDate"
-                    color="secondary"
+                    color="warning"
                     name="startDate"
                   />
                   <Field
@@ -95,7 +95,7 @@ const AddProjectModal = ({ data }) => {
                     fullWidth
                     bordered
                     placeholder="startDate"
-                    color="secondary"
+                    color="warning"
                     name="endDate"
                   />
                 </div>
@@ -109,7 +109,7 @@ const AddProjectModal = ({ data }) => {
                   >
                     cancel
                   </Button>
-                  <Button size={"sm"} color="secondary" type="submit">
+                  <Button size={"sm"} color="warning" type="submit">
                     {isSubmitting ? (
                       <Loading type="points" color={"white"} />
                     ) : (

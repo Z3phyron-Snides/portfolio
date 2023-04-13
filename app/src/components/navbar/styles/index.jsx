@@ -1,5 +1,5 @@
 import { Switch } from "@nextui-org/react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
 const fadeIn = keyframes`
@@ -24,10 +24,48 @@ export const Container = styled.div`
   height: 72px;
   width: 100%;
   animation: ${fadeIn} 4.5s ease;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px) ;
   z-index: 999;
 
+  a {
+      color: ${({theme}) => theme.text};
+      position: relative;
+      &.active {
+        color: ${(p) => p.theme.green};
+        font-size: 20px;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 50px;
+          background: ${(p) => p.theme.green};
+          bottom: -15px;
+          left: -5px;
+
+          @media screen and (max-width: 1200px) {
+            left: 0px;
+          }
+          @media screen and (max-width: 900px) {
+            left: 6px;
+          }
+        }
+      }
+
+      /* &.pending {
+        color: ${(p) => p.theme.green};
+      } */
+    }
+
+  
+ /* .text, .icon {
+      color: ${({theme}) => theme.green};
+    } */
+
+ 
   .text {
     display: none;
   }
@@ -81,37 +119,11 @@ export const Container = styled.div`
     transition: 0.3s;
     outline: none;
 
-    a {
-      color: ${(p) => p.theme.text};
-      position: relative;
-      &.active {
-        color: ${(p) => p.theme.green};
-        font-size: 20px;
-
-        &::after {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 8px;
-          height: 8px;
-          border-radius: 50px;
-          background: ${(p) => p.theme.green};
-          bottom: -15px;
-          left: -5px;
-
-          @media screen and (max-width: 1200px) {
-            left: 0px;
-          }
-          @media screen and (max-width: 900px) {
-            left: 6px;
-          }
-        }
-      }
-
-      &.pending {
-        color: ${(p) => p.theme.green};
-      }
+    .link {
+      color: ${({theme}) => theme.link};
     }
+
+    
   }
 
   .buttons {
@@ -184,20 +196,33 @@ export const Logo = styled(Link)`
   color: ${(props) => props.theme.text};
 `;
 
-export const Toggle = styled.div`
-  font-size: 25px;
-  display: none;
-  margin-left: auto;
-  color: ${(props) => props.theme.text};
-  @media screen and (max-width: 900px) {
-    display: block;
-    margin-bottom: -10px;
-  }
-`;
+
 
 export const Menu = styled.div``;
-export const LinkEl = styled(Link)`
-  color: ${(props) => props.theme.text};
+
+export const LinkEl = styled(NavLink)`
+  color: ${(p) => p.theme.link};
+  position: relative;
+  &.active {
+    color: ${(p) => p.theme.green};
+    font-size: 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50px;
+      background: ${(p) => p.theme.green};
+      bottom: -15px;
+      left: 45%;
+    }
+  }
+
+  &.pending {
+    color: ${(p) => p.theme.green};
+  }
 `;
 export const SwitchEl = styled(Switch)`
   /* margin-left: 100%; */

@@ -1,18 +1,12 @@
 import { Formik, Field } from "formik";
 import { ButtonGroup, Container, FormCtrl, FormEl, Media } from "./styles";
-import {
-  Avatar,
-  Button,
-  Input,
-  Loading,
-  Card,
-} from "@nextui-org/react";
+import { Avatar, Button, Input, Loading, Card } from "@nextui-org/react";
 
 import { BsPlus } from "react-icons/bs";
 import Editor from "../editor";
-import {  useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
-import {  UpdateBlog } from "../../features/blog/BlogSlice";
+import { UpdateBlog } from "../../features/blog/BlogSlice";
 
 import { closeModal } from "../../features/tools/modal";
 
@@ -20,7 +14,6 @@ const EditBlog = ({ data }) => {
   const [selectedImages, setSelectedImages] = useState(
     data ? data.image : null
   );
-
 
   const dispatch = useDispatch();
 
@@ -75,7 +68,7 @@ const EditBlog = ({ data }) => {
                     fullWidth
                     bordered
                     placeholder="Title"
-                    color="secondary"
+                    color="warning"
                     name="title"
                   />
                 </FormCtrl>
@@ -92,7 +85,7 @@ const EditBlog = ({ data }) => {
                   >
                     cancel
                   </Button>
-                  <Button size={"sm"} color="secondary" type="submit">
+                  <Button size={"sm"} color="warning" type="submit">
                     {isSubmitting ? (
                       <Loading type="points" color={"white"} />
                     ) : (

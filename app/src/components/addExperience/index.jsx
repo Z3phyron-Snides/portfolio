@@ -82,7 +82,7 @@ const AddProjectModal = () => {
                   fullWidth
                   bordered
                   placeholder="Company Name"
-                  color="secondary"
+                  color="warning"
                   name="companyName"
                 />
                 <Field
@@ -91,7 +91,7 @@ const AddProjectModal = () => {
                   fullWidth
                   bordered
                   placeholder="Job Title"
-                  color="secondary"
+                  color="warning"
                   name="jobTitle"
                 />
                 <Field
@@ -100,7 +100,7 @@ const AddProjectModal = () => {
                   fullWidth
                   bordered
                   placeholder="Description"
-                  color="secondary"
+                  color="warning"
                   name="description"
                 />
 
@@ -112,7 +112,7 @@ const AddProjectModal = () => {
                     fullWidth
                     bordered
                     placeholder="startDate"
-                    color="secondary"
+                    color="warning"
                     name="startDate"
                   />
                   <Field
@@ -122,14 +122,14 @@ const AddProjectModal = () => {
                     fullWidth
                     bordered
                     placeholder="startDate"
-                    color="secondary"
+                    color="warning"
                     name="endDate"
                   />
                 </div>
 
                 <Button
                   auto
-                  color="secondary"
+                  color="warning"
                   type="submit"
                   onClick={closeHandler}
                 >

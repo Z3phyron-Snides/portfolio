@@ -54,7 +54,7 @@ const AddProjectModal = () => {
   };
   return (
     <Container>
-      <Button auto color="secondary" onClick={handler} icon={<TbPlus />} />
+      <Button auto color="warning" onClick={handler} icon={<TbPlus />} />
 
       <Modal
         closeButton
@@ -80,7 +80,7 @@ const AddProjectModal = () => {
                   fullWidth
                   bordered
                   placeholder="Title"
-                  color="secondary"
+                  color="warning"
                   name="title"
                 />
                 <Field
@@ -89,7 +89,7 @@ const AddProjectModal = () => {
                   fullWidth
                   bordered
                   placeholder="Description"
-                  color="secondary"
+                  color="warning"
                   name="description"
                 />
                 <Field
@@ -98,7 +98,7 @@ const AddProjectModal = () => {
                   fullWidth
                   bordered
                   placeholder="URL"
-                  color="secondary"
+                  color="warning"
                   name="url"
                 />
                 <Field name="tags">
@@ -120,7 +120,7 @@ const AddProjectModal = () => {
                 </Field>
                 <Button
                   auto
-                  color="secondary"
+                  color="warning"
                   type="submit"
                   onClick={closeHandler}
                 >

@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { reset, UpdateProject } from "../../features/project/ProjectSlice";
 import { ButtonGroup, Container, FormEl } from "./styles";
 import {
@@ -15,7 +15,6 @@ import { closeModal } from "../../features/tools/modal";
 import { Formik, Field } from "formik";
 
 const EditProject = ({ data }) => {
-
   const dispatch = useDispatch();
 
   const initialValues = {
@@ -52,7 +51,7 @@ const EditProject = ({ data }) => {
                       fullWidth
                       bordered
                       placeholder="Title"
-                      color="secondary"
+                      color="warning"
                     />
                   )}
                 </Field>
@@ -64,7 +63,7 @@ const EditProject = ({ data }) => {
                       fullWidth
                       bordered
                       placeholder="Description"
-                      color="secondary"
+                      color="warning"
                     />
                   )}
                 </Field>
@@ -76,7 +75,7 @@ const EditProject = ({ data }) => {
                       fullWidth
                       bordered
                       placeholder="URL"
-                      color="secondary"
+                      color="warning"
                     />
                   )}
                 </Field>
@@ -104,7 +103,7 @@ const EditProject = ({ data }) => {
                   >
                     cancel
                   </Button>
-                  <Button size={"sm"} color="secondary" type="submit">
+                  <Button size={"sm"} color="warning" type="submit">
                     {isSubmitting ? (
                       <Loading type="points" color={"white"} />
                     ) : (

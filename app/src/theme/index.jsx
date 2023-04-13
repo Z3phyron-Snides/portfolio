@@ -22,7 +22,13 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
       background: ${(props) => props.theme.body};
+      
     }
+    
+    /* a {
+      color: ${({ theme }) => theme.link};
+      font-size: 25px;
+    } */
 
     .top__bar {
       display: flex;
@@ -35,10 +41,7 @@ export const GlobalStyles = createGlobalStyle`
       z-index: 999;
       
 
-      a {
-        color: ${(props) => props.theme.green};
-        font-size: 25px;
-      }
+     
       
     } 
 
@@ -65,13 +68,15 @@ export const darkTheme = {
   body: "var(--black)",
   text: "var(--platinum)",
   content: "rgba(229, 229, 229, 0.373)",
+  link: "rgb(255, 255, 255)",
   transition: "all .3s ease",
 };
 
 export const lightTheme = {
   green: "#fca311ff",
-  body: "var(--white)",
+  body: "#f0f0f0",
   text: "var(--oxford-blue)",
   content: "rgba(20, 33, 61, 0.712)",
+  link: "rgb(19, 30, 56)",
   transition: "all .3s ease",
 };
